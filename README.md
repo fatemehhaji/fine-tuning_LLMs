@@ -35,7 +35,7 @@ After fine-tuning, we measure various metrics to evaluate the quality of the gen
 
 We explore the impact of different hyperparameters (top_k, beam_size, and temperature) on the text generation capabilities of the fine-tuned LLMs. We conduct experiments with varying parameter settings and measure their effects using the defined metrics.
 
-![alt text]([http://url/to/img.png](https://github.com/fatemehhaji/fine-tuning_LLMs/images/parameters_evaluation.jpeg))
+![alt text](https://github.com/fatemehhaji/fine-tuning_LLMs/blob/main/images/parameters_evaluation.jpeg)
 
 ## Citation
 
