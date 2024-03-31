@@ -49,9 +49,7 @@ Discussion - The presented data suggests that model performance is sensitive to 
 
 ![alt text](https://github.com/fatemehhaji/fine-tuning_LLMs/blob/main/images/parameters_evaluation.jpeg)
 
-## Citation
-
-If you use this code in your research, please cite the following sources:
+## Refrences
 
 - https://www.datacamp.com/tutorial/fine-tuning-llama-2
 - https://www.kaggle.com/code/kingabzpro/fine-tuning-phi-2
