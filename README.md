@@ -33,7 +33,6 @@ After fine-tuning, we measure various metrics to evaluate the quality of the gen
 
 Discussion - The results from the table show that the phi-2-finetuned model slightly outperforms the Llama-2-7b-hf-finetuned and Mistral-7B-finetuned models in terms of BLEU, ROUGE-L, Perplexity, and BERTScore metrics. The BLEU scores are low for all models, suggesting that this metric may not be the best indicator of performance for this specific task. On the other hand, BERTScores are notably higher, indicating a better alignment with semantic similarity in the generated text. Human evaluation scores are also relatively high for all models, suggesting that the generated text is comprehensible to humans. The generation of extra tokens seems to affect all models similarly, as reflected in their scores across the different metrics.
 
-
 Generated using settings: top_k = 50, num_beams = 5, and temperature = 1.
 
 | Model Name                            | BLEU     | ROUGE-L   | BERTScore | Perplexity | Human Evaluation |
@@ -45,6 +44,8 @@ Generated using settings: top_k = 50, num_beams = 5, and temperature = 1.
 ## Hyperparameter Tuning
 
 We explore the impact of different hyperparameters (top_k, beam_size, and temperature) on the text generation capabilities of the fine-tuned LLMs. We conduct experiments with varying parameter settings and measure their effects using the defined metrics.
+
+Discussion - The presented data suggests that model performance is sensitive to parameter adjustments, with varying degrees of impact across different metrics. Increasing top_k seems to influence semantic metrics such as BERTScore, possibly introducing noise with a wider selection of tokens. Perplexity trends increase with more beams in one model, hinting at increased uncertainty or exploration in the prediction space. Surprisingly, temperature modifications do not show a significant effect, suggesting a potential robustness in the models or an insufficient range to elicit a notable response. These insights highlight the complex interplay between parameter tuning and model behavior, warranting further investigation to fully understand the underlying mechanisms.
 
 ![alt text](https://github.com/fatemehhaji/fine-tuning_LLMs/blob/main/images/parameters_evaluation.jpeg)
 
