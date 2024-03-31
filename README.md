@@ -31,6 +31,14 @@ We fine-tune three different LLMs on a text dataset. The fine-tuning process inv
 
 After fine-tuning, we measure various metrics to evaluate the quality of the generated text, including perplexity, BLEU score, ROUGE-L score, and BERTScore. We also conduct a small-scale human evaluation to assess the generated text's grammatical correctness, coherence, and correctness of the answer.
 
+Generated using settings: top_k = 50, num_beams = 5, and temperature = 1.
+
+| Model Name                            | BLEU     | ROUGE-L   | BERTScore | Perplexity | Human Evaluation |
+|---------------------------------------|----------|-----------|-----------|------------|------------------|
+| phi-2-finetuned_topk50_nb5_t1         | 0.469636 | 0.604907  | 0.931351  | 19.0088    | 0.895062         |
+| Llama-2-7b-hf-finetuned_topk50_nb5_t1 | 0.137808 | 0.38557   | 0.897052  | 10.0402    | 0.919753         |
+| Mistral-7B-finetuned_topk50_nb5_t1    | 0.110753 | 0.304393  | 0.855278  | 8.10991    | 0.845679         |
+
 ## Hyperparameter Tuning
 
 We explore the impact of different hyperparameters (top_k, beam_size, and temperature) on the text generation capabilities of the fine-tuned LLMs. We conduct experiments with varying parameter settings and measure their effects using the defined metrics.
