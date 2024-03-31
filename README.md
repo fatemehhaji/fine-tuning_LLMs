@@ -31,6 +31,9 @@ We fine-tune three different LLMs on a text dataset. The fine-tuning process inv
 
 After fine-tuning, we measure various metrics to evaluate the quality of the generated text, including perplexity, BLEU score, ROUGE-L score, and BERTScore. We also conduct a small-scale human evaluation to assess the generated text's grammatical correctness, coherence, and correctness of the answer.
 
+Discussion - The results from the table show that the phi-2-finetuned model slightly outperforms the Llama-2-7b-hf-finetuned and Mistral-7B-finetuned models in terms of BLEU, ROUGE-L, Perplexity, and BERTScore metrics. The BLEU scores are low for all models, suggesting that this metric may not be the best indicator of performance for this specific task. On the other hand, BERTScores are notably higher, indicating a better alignment with semantic similarity in the generated text. Human evaluation scores are also relatively high for all models, suggesting that the generated text is comprehensible to humans. The generation of extra tokens seems to affect all models similarly, as reflected in their scores across the different metrics.
+
+
 Generated using settings: top_k = 50, num_beams = 5, and temperature = 1.
 
 | Model Name                            | BLEU     | ROUGE-L   | BERTScore | Perplexity | Human Evaluation |
