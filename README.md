@@ -29,15 +29,11 @@ We fine-tune three different LLMs on a text dataset. The fine-tuning process inv
 
 ## Metric Measurements
 
-After fine-tuning, we measure various metrics to evaluate the quality of the generated text, including perplexity, BLEU score, ROUGE-L score, BERTScore, and CodeBLEU. We also conduct a small-scale human evaluation to assess the generated text's grammatical correctness, coherence, and correctness of the answer.
+After fine-tuning, we measure various metrics to evaluate the quality of the generated text, including perplexity, BLEU score, ROUGE-L score, and BERTScore. We also conduct a small-scale human evaluation to assess the generated text's grammatical correctness, coherence, and correctness of the answer.
 
 ## Hyperparameter Tuning
 
 We explore the impact of different hyperparameters (top_k, beam_size, and temperature) on the text generation capabilities of the fine-tuned LLMs. We conduct experiments with varying parameter settings and measure their effects using the defined metrics.
-
-## Discussions
-
-Please refer to the `discussions.md` file for a detailed analysis and comparison of the models based on the metrics and human evaluation.
 
 ## Citation
 
@@ -46,7 +42,4 @@ If you use this code in your research, please cite the following sources:
 - https://www.datacamp.com/tutorial/fine-tuning-llama-2
 - https://www.kaggle.com/code/kingabzpro/fine-tuning-phi-2
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
