@@ -12,14 +12,7 @@ To set up the project, follow these steps:
    ```bash
    git clone https://github.com/fatemehhaji/fine-tuning_LLMs.git
 
-2. Create a Virtual Environment
-
-   Navigate to the project directory and create a virtual environment:
-   
-   ```bash
-   cd your-repository
-   python3 -m venv venv
-   ```
+2. Create and activate a Virtual Environment.
 3. Install Dependencies
 
    Install the required dependencies from the `requirements.txt` file:
