@@ -12,8 +12,23 @@ To set up the project, follow these steps:
    ```bash
    git clone https://github.com/fatemehhaji/fine-tuning_LLMs.git
 
+2. Create a Virtual Environment
 
-3. Run the notebooks:
+   Navigate to the project directory and create a virtual environment:
+   
+   ```bash
+   cd your-repository
+   python3 -m venv venv
+   ```
+3. Install Dependencies
+
+   Install the required dependencies from the `requirements.txt` file:
+   
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the notebooks:
 - `finetune_llama2.ipynb`: Fine-tuning LLaMa-2 model
 - `finetune_phi2.ipynb`: Fine-tuning Phi-2 model
 - `finetune_mistral.ipynb`: Fine-tuning Mistral model
